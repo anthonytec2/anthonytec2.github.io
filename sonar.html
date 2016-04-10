@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Anthony Bisulco's Portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/Research_2013.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" id="AntBis" href="index.html">Anthony Bisulco <i class="fa fa-rocket"></i></i> </a>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" id="About" href="about.html">About</a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" id="Port" href="gal.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" id="Port" href="Doc\Resume.pdf">Resume</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        </nav>
+</body>
+<div class="container" >
+        
+        <div class="row" id="YEA">
+            <div class="col-md-3">
+             
+            </div>
+            <div class="col-md-6"  >
+                <h1>Sonar Lab</h1>
+            </div>
+            <div class="col-md-3">
+                
+            </div>
+        </div>
+
+    </div>
+
+<div class="container" >
+        
+        <div class="row">
+            <div class="col-md-3">
+                <figure>
+                <img src="img/sound.png" class="img-responsive">
+                 <figcaption>Speed of Sound</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-5"  >
+             <figure>
+                <img src="img/as.png" class="img-responsive">
+                 <figcaption>Speed of Sound</figcaption>
+                </figure>
+
+            </div>
+            <div class="col-md-3">
+                <figure>
+                <img src="img/ampS.png" width="400px" height="200px" class="img-responsive">
+                 <figcaption>Amplitude v Distance</figcaption>
+                </figure>
+            </div>
+        </div>
+
+    </div>
+<div>
+
+
+<b class="went" id="titl"><a href="Doc\Lab.pdf">Sonar Lab</a></b>
+<p class="went"> 
+
+
+The purpose of this investigation was to determine the speed of sound in air using MATLAB. To do this an ultrasonic transmitter and receiver were used which emit/receive sound waves. The emitter was wired to a function generator where 4 pulses of a 10V 40kHz sinusoidal wave was generated. This pulse then was transmitted via the ultrasonic transmitter and then received by the receiver whichs output was hooked up to channel 1 on the oscilloscope. Additionally the oscilloscope had the transmitted signal on channel 2. Additionally an external trigger was ap- plied to the oscilloscope to indicate the sampling start period. Now with the given transmitted pulse and received scope on the oscilloscope one can look at the time delay between the two. This time delay is important as one way to calculate the speed of sound is by taking the travel distance and diving it by time. Therefore by obtaining various travel distances and travel times one could theoretically graph distance over time and perform a linear regression whichs slope is the speed of sound.
+During this investigation a procedure similar to this is done throughout experiment 1 the ultra- sonic transmitter and receiver are facing each other aligned with a measuring tape. This tape then allows one to find the travel distance and then by counting the number of time slots of the oscilloscope one can find the travel time. This procedure was repeated for a various distances with its respective time recorded. Using this information in MATLAB a linear regression was then created using the polyfit function and the slope of this function was the found value for speed of sound.
+The next part of this investigation involved creating an ultrasonic distance sensor based upon a given time input. This setup consisted of a transmitter receiver facing the same way on the same measurement line of the ruler. In order to create this distance sensor the same idea is used as in investigation one except now the unknown value is distance. The speed of sound is known from this first investigation and the time is input although this is twice the time. The reason this is twice the time is this is the time to both transmit and receive therefore the time needs to be over two. Finally this then yields an equation time over two times velocity which equals the distance.
+The final part of the investigation involved finding the travel distance based on a different method of the amplitude propagation. Known by the power law power in an area decreases as distance increases. Therefore based on the amplitude one can predict the distance. It is known the amplitude is equal to a constant multiplied by distance to the nth power. Therefore if one collects amplitudes and distances and takes a log of the given equation then a linear fit can be made using polyfit. Then this polyfit can be used to find n and the constant which solves the overall equation.
+</p>
+
+
+<div id="footer">
+  <div class="container" id="WOW">
+    All images and text © 2016 Anthony Bisulco 
+  </div>
+</div>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+
+
+</html>
+
+

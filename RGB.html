@@ -77,7 +77,7 @@
              
             </div>
             <div class="col-md-6"  >
-                <h1>Embedded Computation</h1>
+                <h1>RGB Machine</h1>
             </div>
             <div class="col-md-3">
                 
@@ -90,17 +90,24 @@
         
         <div class="row">
             <div class="col-md-3">
-                
+                <figure>
+                <img src="img/RGB.JPG" class="img-responsive">
+                 <figcaption>RGB Machine Setup</figcaption>
+                </figure>
             </div>
             <div class="col-md-5"  >
              <figure>
-                <iframe id="video" width="400" height="315" src="https://www.youtube.com/embed/1Z7DSaLYlfA" frameborder="0" allowfullscreen></iframe>
-                <figcaption>Working Sorting</figcaption>
+                <iframe id="video" width="400" height="315" src="https://www.youtube.com/embed/AxqQidfVMDM?list=FLwlLKV1hP2QUH6hSUmRH_tg" frameborder="0" allowfullscreen></iframe>
+                <figcaption>RGB Machine Video</figcaption>
                 </figure>
 
             </div>
-            <div class="col-md-2">
-                
+            <div class="col-md-3">
+                 <figure>
+                <iframe id="video" width="400" height="315" src="https://www.youtube.com/embed/EDzh73_wTqw"
+                frameborder="0" allowfullscreen></iframe>
+                <figcaption>RGB Machine Video</figcaption>
+                </figure>
             </div>
         </div>
 
@@ -108,12 +115,13 @@
 <div>
 
 
-<b class="went" id="titl">Computer Vision Project</b>
+<b class="went" id="titl">RGB Machine</b>
 <p class="went"> 
 
+    The above project was developed for the UPC Student, which is a school for students with Cerebral Palsy, in order to produce interactive playground equipment. This piece of equipment consisted of 3 different tracks the Red, Green and Blue track, hence the name RGB machine. A golf ball reservoir was located at the bottom of the machine and a chain lift brought each of the golf balls to the beginning of the track. Then based on what button was pressed the golf ball would go down either the Red, Green or Blue track. In addition, if no button was pressed then the auto mode activates which puts the ball down a randomly selected track. The track that the ball is going down is known via what color the RGB lights are lit.
+    The parts that make up the brains of this project is an Arduino Mega which controls various moving parts in the project, the lights of the RGB machine and the charging control for the project. This project has been present at the school ever since June 2012 and is used by students daily to help improve hand eye coordination.
 
-The above is my final project for my engineering computation class which involved learning the fundamentals of C++. Specifically, this project applied using C++ to ball sorting computer vision control system. The basic layout of the code for this project, first a 640x480 image was obtained via a webcam. A two dimensional array was created to store the 24 bit color values of each pixel(8 bit R,G and B). After this an average of the RGB values was taken over a small region where the balls center would most likely be located. After this by comparing these various RGB averages the  color of the ball was determined to be RBG or white. After this PWM was generated to move the motor from the ball current bin to the bin designated to be the selected balls bin. After this was complete a simple transisitor circuit was used to drive a relay to open and release the ball. Along with this action, the relay was then locked again and the upper relay opened to allow the next ball to be sorted.
-
+</p>
 
 
 <div id="footer">
@@ -140,5 +148,4 @@ The above is my final project for my engineering computation class which involve
 
 
 </html>
-
 

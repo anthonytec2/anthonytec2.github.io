@@ -77,7 +77,7 @@
              
             </div>
             <div class="col-md-6"  >
-                <h1>Embedded Computation</h1>
+                <h1>Robot Arm Sci-Oly</h1>
             </div>
             <div class="col-md-3">
                 
@@ -90,17 +90,23 @@
         
         <div class="row">
             <div class="col-md-3">
-                
+                <figure>
+                <img src="img/Set1.jpg" class="img-responsive">
+                 <figcaption>Setup</figcaption>
+                </figure>
             </div>
             <div class="col-md-5"  >
              <figure>
-                <iframe id="video" width="400" height="315" src="https://www.youtube.com/embed/1Z7DSaLYlfA" frameborder="0" allowfullscreen></iframe>
-                <figcaption>Working Sorting</figcaption>
+                <img src="img/Eobot.jpg" class="img-responsive">
+                 <figcaption>Robot Flat</figcaption>
                 </figure>
 
             </div>
-            <div class="col-md-2">
-                
+            <div class="col-md-3">
+                 <figure>
+                <img src="img/PS.JPG" class="img-responsive">
+                 <figcaption>PS2 Controller Initial</figcaption>
+                </figure>
             </div>
         </div>
 
@@ -108,12 +114,11 @@
 <div>
 
 
-<b class="went" id="titl">Computer Vision Project</b>
+<b class="went" id="titl">Robot Arm Sci-Oly  </b>
 <p class="went"> 
 
-
-The above is my final project for my engineering computation class which involved learning the fundamentals of C++. Specifically, this project applied using C++ to ball sorting computer vision control system. The basic layout of the code for this project, first a 640x480 image was obtained via a webcam. A two dimensional array was created to store the 24 bit color values of each pixel(8 bit R,G and B). After this an average of the RGB values was taken over a small region where the balls center would most likely be located. After this by comparing these various RGB averages the  color of the ball was determined to be RBG or white. After this PWM was generated to move the motor from the ball current bin to the bin designated to be the selected balls bin. After this was complete a simple transisitor circuit was used to drive a relay to open and release the ball. Along with this action, the relay was then locked again and the upper relay opened to allow the next ball to be sorted.
-
+The robot arm that we built for states uses a Pololu Maestro Servo controller, a bunch of servos, female wire connectors, male wire connectors, a passive electromagnet, a custom designed claw, lazy susan joint, computer,  aluminum, a USB to mini USB A cable, various screws, velcro and a PS3 controller. The basics behind how the robot arm moves is there is a rotational servo which turns an upper wood disc along a lazy susan joint. In order to make the robot arm move up and down 2 high powered servos are used which are both use the same signal wire. Then to change the angle at which an object is picked up the top servo on the aluminum is used. To close and open the claw a servo is hooked up with wire to open and close the claw based on tension. The same is true for the passive electromagnet. As for the principals of operation for the Robot Arm the PS3 controller is the starting point. The PS3 controller is connected to a computer via bluetooth and the values of all the current analog sticks and buttons pressed are constantly updated. Now based upon those values Serial commands are sent to the servo controller moving the servos.
+</p>
 
 
 <div id="footer">
@@ -140,5 +145,4 @@ The above is my final project for my engineering computation class which involve
 
 
 </html>
-
 

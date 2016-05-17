@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Anthony Bisulco's Portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/Research_2013.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" id="AntBis" href="index.html">Anthony Bisulco <i class="fa fa-rocket"></i></i> </a>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" id="About" href="about.html">About</a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" id="Port" href="gal.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" id="Port" href="Doc\Resume.pdf">Resume</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        </nav>
+</body>
+<div class="container" >
+        
+        <div class="row" id="YEA">
+            <div class="col-md-3">
+             
+            </div>
+            <div class="col-md-6"  >
+                <h1>Mode Configurable Robot</h1>
+            </div>
+            <div class="col-md-3">
+                
+            </div>
+        </div>
+
+    </div>
+
+<div class="container" >
+        
+        <div class="row">
+            <div class="col-md-3">
+                <figure>
+                <img src="img/Env.JPG" class="img-responsive">
+                 <figcaption>Setup</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-5"  >
+             <figure>
+                <iframe id="video" width="400" height="315" src="https://www.youtube.com/embed/dCAMquvqaI0" frameborder="0" allowfullscreen></iframe>
+                <figcaption>Robot Video</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-3">
+                    <figure>
+                <iframe id="video" width="400" height="315" src="https://www.youtube.com/embed/Sq-0UWah_mI" frameborder="0" allowfullscreen></iframe>
+                <figcaption>Robot Video</figcaption>
+                </figure>
+            </div>
+        </div>
+
+    </div>
+<div>
+
+
+<b class="went" id="titl">Robot Info  </b>
+<p class="went"> 
+
+The vex autonomous robot is a robot that that does not stay still in an environment for more then 10 sec and can avoid all obstacles. This task we have been working on for about 4 weeks but over the last week we have gotten more done then ever before. So the robot works  by reading the ultrasonic sensors, quad rotary encoders, bumper switches and an IR sensor. I have finally implement a IR sensor in my code because our robot could not handle more then two ultrasonics. One of the reasons I did not want to incorporate an IR sensor into this project is because of its flaw of giving bad returned  values when two close to an obstacle. This error though has a safety net in which if the robot hits the wall the bumper sensors will trigger instead of the IR sensor. 
+
+ So how this algorithm works in order to make the robot autonomous is by first  checking both ultrasonics if they are an inch away from a wall. Then if this is triggered then this will cause the robot to shift 10 degrees left or right based on which ultrasonic has a larger value. Next the code continues checking in which it checks the IR sensor if it is smaller then 180. If this condition is then true then the robot will go back for one second and where which ultrasonic has more room it will turn. The third condition checked is the bumper sensor pressed in which it will respond by doing exactly what happens if the IR is smaller then 180. Finally if no conditions are flagged then the last result is just to have the robot go straight. Overall some functions in this program that are used in collaboration are the stop,  move straight, turn left, turn right and ten degree turn function . 
+
+So an interesting experiences we had while making this program was having a robot that goes forward and backwards only working if a button was pressed so the robot was semi autonomous.  One debugging error we had was the robot would go in an infinite circle in which we forgot to make the robot to go straight after the function was done. Another condition that was added was making the value of the ultrasonic between 1 and 0 because if an ultrasonic has an error it reads -1. Also another error was the rotary encoders weren't set to 0 when the function began so they would not do a turn when turns were needed to be done. One idea that was scrapped because the vex cpu cannot handle a third ultrasonic was having an ultrasonic on a servo scanning left and right. Some extras that were added during this project were a pin hole camera that can view the robot surroundings. 
+
+One problem we had during this investigation was the bumper switch wire that is usually tucked into the switch was not and was touching the metal chassis of our robot in which it made our whole chassis 5v causing a burning smell. My partner discovered this problem in which we fixed by shorting the wire and putting electrical tape on the wire.
+
+Statement of Problem
+
+Our overall problem is to construct a robot that can be adjusted into three configurable modes; wander, remote control and follow the wall. The first mode, wander, will allow the robot to adjust to different obstacles in the environment using various sensors.  The second mode will allow the robot to move depending upon the signals received from a remote control transmitter .The last mode will allow the robot to follow the wall, which will function by using the ultrasonic sensors to track the distance away from the wall.
+
+
+
+
+
+Proposed Solution
+
+Our solution is to use the Vex PIC Microcontroller to process signals from various sensors and inputs and to control motor and servo modules. The adjustable mode of the robot will be dependent upon the sensor value of a potentiometer. The wander mode will use the IR distance sensor, ultrasonic sensor, quadrature encoder, bumper switch and IR distance sensor to adjust to the environment.  The remote control mode will use the RF transmitter and receiver module to send out different signals. Finally, the wander mode will use one of the ultrasonic sensors to adjust to the different curvature of the wall.
+
+
+
+Design Description
+
+
+
+
+
+Different sensors were used in our robot to sense the environment. The bumper switches were used to determine if anything is in the robots way. For example, if the robot hits the wall, the switch will send out a voltage to the microcontroller telling that the switch is pressed. To prevent the robot from continuously hitting the wall, an Infrared Distance Sensor was used to determine if the robot is about to hit an object. Additionally, ultrasonic sensors were placed on the right and left side of the robot to determine if the robot is going to curve towards a wall. Finally, we used the quadrature encoders to determine the distance in which the robot has traveled.
+
+Figure 2: Design of the Robot
+
+The basic input and output system follows:
+
+
+
+Figure 3: Flowchart of the inputs and outputs of the robot
+
+To change the different modes of the robot, a potentiometer is used. This is done by reading the analog values of the potentiometer. LEDs are also used to indicate the user which mode the robot is in. The following modes of the robot are as follows:
+
+Mode 1: Wander
+
+The first mode allows the robot to move without hitting any obstacles. The algorithm functions first by checking if either of the bumper switches are pressed. If pressed, the robot will back up, and will turn based on the side of the robot with the greatest distance from an obstacle. Next the function checks if either of the ultrasonic sensors is close to the wall and if they are, it will turn 30 degrees to the way where the wall is not. Then the algorithm will check if the IR sensor is close to a wall and if it is then it will back up and follow the same method as the bumper. Finally, if none of the sensors are flagged, then the robot will go straight.
+
+Mode 2: Remote Control
+
+The second mode allows a user to control the movement of the robot using the Vex RF Transmitter and Receiver module. The Transmitter sends out commands to the Microcontroller via radio waves received by the Receiver. Then these values are read and the motor values are set based on the value. This is process is looped, which allows different signals to be received to the robot.
+
+
+
+Mode 3: Follow the Wall
+
+The third mode allows the user to sense the distance away from the wall and will react based on that distance. This specific mode can follow either the left or right wall based on where the jumpers are placed. So the robot will move parallel to the wall, but if the robot comes within 3 inches of the wall it will cause the motor modules to move the robot away from the wall. Next if the robot is within 3 to 12 inches, it will go towards the wall. Additionally, if the robot goes above 13 inches then we can assume that the wall has possibly changed position in which it may have gotten further away, so the robot makes a 90 degree turn towards the wall and then goes straight.
+
+
+
+
+
+
+
+Conclusions and Recommendations
+
+In summation, our configurable robot was successful. It had three modes; wander, remote control, and follow the wall. These modes have though had some errors in them. For example, in the wander mode, if the robot goes diagonal into an edge it might sometimes become stuck and will continue to go forward. Another error in the follow the wall mode is that the robot may sometimes turn where there is no wall. This may be because the robot did not change the motor speeds correctly. 
+
+Some future investigations we may want to precede in this project is possibly adding a computer vision aspect to the project. By doing this, it may allow for a more precise method to follow a path while avoiding obstacles. Another future investigation we may want to do is to make the robot compatible with a GPS sensor so that the robot could move towards a specified location. Overall we liked designing this mode configurable robot and want to continue to build different robotics projects.
+
+
+
+
+
+
+ 
+ 
+
+</p>
+
+
+<div id="footer">
+  <div class="container" id="WOW">
+    All images and text © 2016 Anthony Bisulco 
+  </div>
+</div>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+
+
+</html>
+

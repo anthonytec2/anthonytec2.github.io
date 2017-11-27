@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="utf-8">
@@ -14,8 +15,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
     <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 
     <!-- Plugin CSS -->
@@ -46,7 +49,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" id="AntBis" href="index.html">Anthony Bisulco <i class="fa fa-rocket"></i></i> </a>
+                <a class="navbar-brand page-scroll" id="AntBis" href="index.html">Anthony Bisulco
+                    <i class="fa fa-rocket"></i>
+                    </i>
+                </a>
 
             </div>
 
@@ -56,87 +62,79 @@
                     <li>
                         <a class="page-scroll" id="About" href="about.html">About</a>
                     </li>
-                    
+
                     <li>
-                        <a class="page-scroll" id="Port" href="gal.html">Portfolio</a>
+                        <a class="page-scroll" id="Port" href="portfolio.html">Portfolio</a>
                     </li>
                     <li>
                         <a class="page-scroll" id="Port" href="Doc\Resume.pdf">Resume</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" id="Port" href="http://www.cernsemester.blogspot.com">Blog</a>
-                    </li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
-   <header style="height:100%">
+    <header style="height:100%">
         <div class="header-content">
             <div class="header-content-inner">
-                <h5 class="dd">Engineer
-                <span class="lines">|</span></h5> 
-                <h1><canvas id="process" datasrc="a_pde/a_pde.pde"></canvas> </h1>
-                <hr> 
-                
+                <h5 class="dd">Engineering Portfolio
+                    <span class="lines">|</span>
+                </h5>
+                <h1>
+                    <canvas id="process" datasrc="a_pde/a_pde.pde"></canvas>
+                </h1>
+                <hr>
+
                 <a href="about.html" class="btn btn-primary btn-xl page-scroll">About Me</a>
             </div>
 
         </div>
 
 
-<div id="footer">
-  <div class="container" id="WOW">
-    All images and text © 2016 Anthony Bisulco 
-  </div>
-</div>
+        <div id="footer">
+            <div class="container" id="WOW">
+                All images and text © 2017 Anthony Bisulco
+            </div>
+        </div>
 
 
-    <script src="js/processing.min.js"></script>
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+        <script src="js/processing.min.js"></script>
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
 
-$(document).ready(function(){
-    
-    $(window).resize(function(){
-       var w = window.innerWidth;
-        var h = window.innerHeight;
-        if(w>760){
-            document.getElementById('process').style.width = '640px';
-        document.getElementById('process').style.height = '200px';
-        
+            $(document).ready(function () {
 
-        }else{
-            document.getElementById('process').style.width = '300px';
-        document.getElementById('process').style.height = '100px';
-        }
-    });
-});
-</script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+                $(window).resize(function () {
+                    var w = window.innerWidth;
+                    var h = window.innerHeight;
+                    if (w > 760) {
+                        document.getElementById('process').style.width = '640px';
+                        document.getElementById('process').style.height = '200px';
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                    } else {
+                        document.getElementById('process').style.width = '300px';
+                        document.getElementById('process').style.height = '100px';
+                    }
+                });
+            });
+        </script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
 
-  ga('create', 'UA-72181801-1', 'auto');
-  ga('send', 'pageview');
+        <!-- Plugin JavaScript -->
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/jquery.fittext.js"></script>
+        <script src="js/wow.min.js"></script>
 
-</script>
+        <!-- Custom Theme JavaScript -->
+        <script src="js/creative.js"></script>
+
 </body>
 
 </html>

@@ -15,10 +15,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
     <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-        rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
-        rel='stylesheet' type='text/css'>
+    <link href='css/fonta' rel='stylesheet' type='text/css'>
+    <link href='css/fontb' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 
     <!-- Plugin CSS -->
@@ -77,7 +75,7 @@
         <!-- /.container-fluid -->
     </nav>
     <header style="height:100%">
-        <div class="header-content">
+        <div class="header-content" style="top: 500px;">
             <div class="header-content-inner">
                 <h5 class="dd">Engineering Portfolio
                     <span class="lines">|</span>
@@ -104,12 +102,10 @@
         <!-- jQuery -->
         <script src="js/jquery.js"></script>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>
+            $(document).ready(function() {
 
-            $(document).ready(function () {
-
-                $(window).resize(function () {
+                $(window).resize(function() {
                     var w = window.innerWidth;
                     var h = window.innerHeight;
                     if (w > 760) {
@@ -125,6 +121,7 @@
             });
         </script>
         <!-- Bootstrap Core JavaScript -->
+        <script src="js/tether.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
 
         <!-- Plugin JavaScript -->
@@ -137,4 +134,4 @@
 
 </body>
 
-</html>
+</html

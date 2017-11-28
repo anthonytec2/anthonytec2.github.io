@@ -5,7 +5,12 @@ body {
 }
 
 body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif;
+}
+
+#worked {
+    padding-left: 15px;
+    font-size: 16px
 }
 
 hr {
@@ -14,34 +19,33 @@ hr {
     border-width: 3px;
 }
 
-#footer{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 20px;
-  margin-bottom: 0px;
-  
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 20px;
+    margin-bottom: 0px;
 }
 
-#pow{
+#pow {
     padding-top: 100px;
     color: #000000;
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
-    
+    font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif;
 }
-#sizer{
 
-	font-size: 25px;
+#sizer {
+    font-size: 25px;
 }
-#twit{
 
-	height: 100%;
+#twit {
+    height: 100%;
 }
-#linke{
 
-	height: 30px;
+#linke {
+    height: 30px;
 }
+
 hr.light {
     border-color: #fff;
 }
@@ -64,7 +68,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 p {
@@ -83,7 +87,7 @@ p {
 }
 
 .text-faded {
-    color: rgba(255,255,255,.7);
+    color: rgba(255, 255, 255, .7);
 }
 
 section {
@@ -99,17 +103,17 @@ aside {
 }
 
 .navbar-default {
-    border-color: rgba(34,34,34,.3);
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    border-color: rgba(34, 34, 34, .3);
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     background-color: #fff;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
 }
 
-.navbar-default .navbar-header  {
+.navbar-default .navbar-header {
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 700;
     color: #ffffff;
 }
@@ -119,98 +123,90 @@ aside {
     color: #eb3812;
 }
 
-.navbar-default .nav > li>a,
+.navbar-default .nav>li>a,
 .navbar-default .nav>li>a:focus {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
     color: #222;
 }
-.navbar-brand{
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+
+.navbar-brand {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     text-transform: none;
     color: #ffffff;
-
 }
-.navbar-default .nav > li>a:hover,
+
+.navbar-default .nav>li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
     color: #f05f40;
 }
 
-.navbar-default .nav > li.active>a,
+.navbar-default .nav>li.active>a,
 .navbar-default .nav>li.active>a:focus {
     color: #f05f40!important;
     background-color: transparent;
 }
 
-.navbar-default .nav > li.active>a:hover,
+.navbar-default .nav>li.active>a:hover,
 .navbar-default .nav>li.active>a:focus:hover {
     background-color: transparent;
 }
 
 @media(min-width:768px) {
     .navbar-default {
-        border-color: rgba(84,84,84,.8);
+        border-color: rgba(84, 84, 84, .8);
         background-color: #ffffff;
     }
-
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(84,84,84,1);
+        color: rgba(84, 84, 84, 1);
     }
-
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
         color: #fff;
     }
-
-    .navbar-default .nav > li>a,
+    .navbar-default .nav>li>a,
     .navbar-default .nav>li>a:focus {
-        color: rgba(84,84,84,1);
-
+        color: rgba(84, 84, 84, 1);
     }
-
-    .navbar-default .nav > li>a:hover,
+    .navbar-default .nav>li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
         color: #fff;
     }
-
     .navbar-default.affix {
-        border-color: rgba(34,34,34,.05);
+        border-color: rgba(34, 34, 34, .05);
         background-color: #fff;
     }
-
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 12px;
         color: #f05f40;
-        
     }
-
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
         color: #eb3812;
     }
-
-    .navbar-default.affix .nav > li>a,
+    .navbar-default.affix .nav>li>a,
     .navbar-default.affix .nav>li>a:focus {
         color: #222;
     }
-
-    .navbar-default.affix .nav > li>a:hover,
+    .navbar-default.affix .nav>li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
         color: #ffffff;
     }
 }
 
-#AntBis:hover{
- color: #eb3812;
-
-}#About:hover{
- color: #eb3812;
-
-}#Port:hover{
- color: #eb3812;
-
+#AntBis:hover {
+    color: #eb3812;
 }
+
+#About:hover {
+    color: #eb3812;
+}
+
+#Port:hover {
+    color: #eb3812;
+}
+
 header .header-content {
     position: relative;
     width: 100%;
@@ -233,14 +229,13 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
-    color: rgba(255,255,255,.7);
+    color: rgba(255, 255, 255, .7);
 }
 
 @media(min-width:768px) {
     header {
         min-height: 100%;
     }
-
     header .header-content {
         position: absolute;
         top: 50%;
@@ -249,13 +244,11 @@ header .header-content .header-content-inner p {
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
     }
-
     header .header-content .header-content-inner {
         margin-right: auto;
         margin-left: auto;
         max-width: 1000px;
     }
-
     header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;

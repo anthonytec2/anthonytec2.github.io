@@ -492,3 +492,7 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+
+.post-text {
+    font-size: 14pt;
+}

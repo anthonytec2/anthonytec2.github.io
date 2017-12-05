@@ -457,10 +457,9 @@ fieldset[disabled] .btn-primary.active {
 .btn {
     border: 0;
     border-radius: 300px;
-    text-transform: uppercase;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 700;
-    font-size: 13pt;
+    font-size: 12pt;
 }
 
 .btn-xl {
@@ -494,5 +493,5 @@ body {
 }
 
 .post-text {
-    font-size: 14pt;
+    font-size: 12pt;
 }

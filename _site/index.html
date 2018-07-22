@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Anthony Bisulco">
+    <meta name="description" content="Portfolio on my various personal projects and blog on optimization, software, machine learning and more.">
+    <meta name="keywords" content="Portfolio, Software, Optimization, Programming, Machine Learning, Signal Processing">
+
+    <title>Anthony Bisulco's Portfolio</title>
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='css/fonta.css' rel='stylesheet' type='text/css'>
+    <link href='css/fontb.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+<link rel="stylesheet" href="css/animate.min.css" type="text/css">
+<link rel="stylesheet" href="css/creative.css" type="text/css">
+
+<body id="page-top">
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" id="AntBis" href="index.html">Anthony Bisulco
+                <i class="fa fa-rocket"></i>
+                </i>
+            </a>
+
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" id="About" href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a class="page-scroll" id="Port" href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a class="page-scroll" id="Port" href="photos.html">Photography</a>
+                </li>
+                <li>
+                    <a class="page-scroll" id="Port" href="resume.html">Resume</a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+  <header style="height:100%">
+    <div class="header-content" style="top: 500px;">
+        <div class="header-content-inner">
+            <h5 class="dd">Engineering Portfolio
+                <span class="lines">|</span>
+            </h5>
+            <h1>
+                <canvas id="process" datasrc="a_pde/a_pde.pde"></canvas>
+            </h1>
+            <hr>
+
+            <a href="about.html" class="btn btn-primary btn-xl page-scroll">About Me</a>
+        </div>
+
+    </div>
+  
+  
+ <!-- jQuery -->
+ <script src="js/jquery.js"></script>
+ <script src="js/tether.min.js"></script>
+
+
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/wow.min.js"></script>
+
+
+  <div id="footer">
+    <div class="container" id="WOW">
+        All images and text © 2017 Anthony Bisulco
+    </div>
+</div>
+</body>
+<script src="js/processing.min.js"></script>
+<script>
+    $(document).ready(function() {
+
+        $(window).resize(function() {
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            if (w > 760) {
+                document.getElementById('process').style.width = '640px';
+                document.getElementById('process').style.height = '200px';
+
+
+            } else {
+                document.getElementById('process').style.width = '300px';
+                document.getElementById('process').style.height = '100px';
+            }
+        });
+    });
+</script>
+<script src="js/creative.js"></script>
+</html>

@@ -1,0 +1,252 @@
+{
+  "basics": {
+    "name": "Anthony Bisulco",
+    "label": "Computational Scientist",
+    "picture": "https://web.northeastern.edu/jmartinez/wp-content/uploads/2014/04/DSC_0584-e1506820534237-300x300.jpeg",
+    "email": "arb426@cornell.edu",
+    "phone": "",
+    "website": "abisulco.com",
+    "summary": "Experienced Computational Scientist with a demonstrated history of working in the higher education & private industry. Strong research professional with a Bachelor of Science (BS) focused in Electrical and Computer Engineering from Northeastern University. Incoming graduate student at Cornell Tech(NYC).",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "New York, New York",
+      "countryCode": "",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "anthonytec2",
+        "url": "https://github.com/anthonytec2"
+      },
+      {
+        "network": "Linkedin",
+        "username": "Anthony Bisulco",
+        "url": "https://www.linkedin.com/in/anthony-bisulco-545894ab/"
+      },
+      {
+        "network": "Devpost",
+        "username": "anthonytec2",
+        "url": "https://devpost.com/Anthonytec2"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Brookhaven National Laboratory",
+      "position": "Software Engineer",
+      "website": "http://www.bnl.gov",
+      "startDate": "2018-06-01",
+      "endDate": "2018-08-01",
+      "summary": "Departement of Energy National Laboratory. I worked on the sPhenix(particle detector) experiment on the Relativistic Heavy Ion Collider ",
+      "highlights": [
+        "Developed fast Python Time of Flight(TOF) signal processing algorithms for a 10ps TOF detector using NumPy, SciPy, and JupyterLab",
+        "Implemented Python parameter optimization algorithms using Dask(distributed computing library) ",
+        "Designed a constant fraction discriminator algorithm to reduce TOF electronics’ delay from 64ps to 8ps"
+      ]
+    },
+    {
+      "company": "Google Research and Machine Intelligence",
+      "position": "Embedded Software Engineering Intern",
+      "website": "https://google.com",
+      "startDate": "2017-07-01",
+      "endDate": "2017-12-01",
+      "summary": "Worked on the AIY projects team at Google. Developed AIY vision kit an on-device neural network accelerator for computer vision",
+      "highlights": [
+        "Applied transfer learning in Tensorflow to retrain models for audio and image recognition on embedded devices",
+        "Assisted in rapid prototyping/full scale manufacturing process of developing",
+        "Traveled internationally/nationally for demoing and marketing AIY kits to distributors"
+      ]
+    },
+    {
+      "company": "Singh Robotics Laboratory",
+      "position": "Systems Integration Engineer",
+      "website": "http://www.ece.neu.edu/people/singh-hanumant",
+      "startDate": "2017-01-01",
+      "endDate": "2018-05-01",
+      "summary": "Northeastern University research laboratory working on field robotics.",
+      "highlights": [
+        "Implemented a visual-based navigation technique for GPS denied urban areas using computer vision ",
+        "Integrated Velodyne LIDAR and 5 Point Grey Cameras into ROS for light field array",
+        "Developed acquisition software for light field calibration in C++ "
+      ]
+    },
+    {
+      "company": "Northeastern University Sensing, Imaging, Control and Actuation Laboratory",
+      "position": "Researcher",
+      "website": "https://web.northeastern.edu/jmartinez/",
+      "startDate": "2014-09-01",
+      "endDate": "2018-05-01",
+      "summary": "Northeastern University research laboratory working on coded and compressive sensing imaging. ",
+      "highlights": [
+        "Developed an FPGA control system for a multiple-input multiple-output radar system with 400 channels",
+        "Implemented simulated annealing and compressive sensing methods for a coded imaging system",
+        "Implemented a fused millimeter/infrared imaging system for target validation",
+        "Designed the system architecture for a fused digital breast tomosynthesis/nearfield radar imaging system",
+        "Collaborated with a group of researchers to advance laboratory projects"
+      ]
+    },
+    {
+      "company": "European Organization for Nuclear Research (CERN)",
+      "position": "ATLAS Systems Engineer",
+      "website": "https://cern.ch",
+      "startDate": "2016-09-01",
+      "endDate": "2016-12-01",
+      "summary": "International particle physics laboratory working at probing the inner structure of matter.",
+      "highlights": [
+        "Developed array synthesis algorithms for multi-anode photomultiplier tubes for increased sensor resolution",
+        "Designed and 3D printed a fiber light guide for 85% increased sensor coverage of the photomultiplier tube",
+        "Built Spectrum a web application for laboratory simulation and experimental data comparison",
+        "Presented at an International Collaboration Conference on Tile Calorimeter Upgrades",
+        "Collaborated with a multi-disciplinary/cultural team on experimental particle physics projects"
+      ]
+    },
+    {
+      "company": "Massachusetts Institute of Technology Lincoln Laboratories",
+      "position": "Summer Researcher",
+      "website": "https://www.ll.mit.edu",
+      "startDate": "2015-05-01",
+      "endDate": "2015-08-01",
+      "summary": "Federally Funded Research and Development center working on engineering projects in the interest of national security. ",
+      "highlights": [
+        "Adapted MATLAB image processing algorithms to an FPGA for a UAV Micro-LIDAR ",
+        "Developed and implemented a configurable FPGA moving average filter for Avalanche Photo Diodes (APD) ",
+        "Built a visualization tool to process APD camera binary files ",
+        "Performed sensor characterization on APDs under varying temperature and voltage conditions",
+        "Collaborated with employees and outside consultants to further development of active optical system"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Boston Athletic Association",
+      "position": "Tactical Communications",
+      "website": "https://www.baa.org",
+      "startDate": "2016-06-01",
+      "endDate": "2018-06-01",
+      "summary": "Perform medical communications over amateur radio for the Boston Marathon",
+      "highlights": []
+    },
+    {
+      "organization": "Boston Public Schools",
+      "position": "Volunteer",
+      "website": "",
+      "startDate": "2014-09-01",
+      "endDate": "2016-05-01",
+      "summary": "Taught various classes on the weekend about digital design and embedded systems to high schools students. Also, worked with students during Friday field trips on environmental conservation activities ",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Cornell Tech",
+      "area": "Electrical and Computer Engineering",
+      "studyType": "Master of Engineering",
+      "startDate": "2018-08-01",
+      "endDate": "2019-05-01",
+      "gpa": "",
+      "courses": [
+        "Statistical Signal Processing and Reinforcement Learning",
+        "Adaptive Signal Processing and Digital Feedback Control",
+        "Embedded Systems",
+        "Algorithms and Data Structures for Applications"
+      ]
+    },
+    {
+      "institution": "Northeastern University",
+      "area": "Electrical and Computer Engineering",
+      "studyType": "Bachelor of Science",
+      "startDate": "2014-09-01",
+      "endDate": "2018-05-01",
+      "gpa": "3.97",
+      "courses": [
+        "Machine Learning",
+        "Linear Systems",
+        "Robotics Sensing and Navigation",
+        "Biomedical Imaging"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Eagle Scout",
+      "date": "2014-11-01",
+      "awarder": "Boy Scouts of America",
+      "summary": ""
+    }
+  ],
+  "publications": [
+    {
+      "name": "Towards Three-dimensional Millimeter-Wave Radar Imaging of On-the-move Targets",
+      "publisher": "IEEE APS/URSI , presented",
+      "releaseDate": "2018-07-01",
+      "website": "http://www.hxi.com/doc/3d_imaging_v11.pdf",
+      "summary": "L. Tirado, W. Zhang, A. Bisulco, H. Gomez-Sousa, J.A. Martinez-Lorenzo"
+    },
+    {
+      "name": "3D Printed Conical Horn Antenna Equipped with Orbital Angular Momentum Lenses for High-Capacity Millimeter-wave Application",
+      "publisher": "IEEE Antennas and Wireless Propagation Letters, submitted",
+      "releaseDate": "2018-05-01",
+      "website": "",
+      "summary": "A. Molaei, L. Tirado, A. Bisulco, C. Gehrke, A. Zhu, J.A. Martinez-Lorenzo"
+    },
+    {
+      "name": "3D Printed Compressive Horn Antenna for High-Sensing-Capacity Millimeter-Wave Imaging",
+      "publisher": "European Conference on Antennas and Propagation, presented",
+      "releaseDate": "2018-04-01",
+      "website": "http://www.iracon.org/wp-content/uploads/2017/10/EuCAP2018-programme.pdf",
+      "summary": "A. Molaei, J. Heredia-Juesas, L. Tirado, W. Zhang, A. Bisulco, A. Zhu, D. Cachay, A. Ghanbarzade Dagheyan, J.A. Martinez-Lorenzo"
+    },
+    {
+      "name": "3D Printed E-Band Compressive Horn Antenna for High-sensing-capacity Imaging Applications",
+      "publisher": "IEEE Antennas and Wireless Propagation Letters, submitted",
+      "releaseDate": "2018-02-01",
+      "website": "",
+      "summary": "A. Molaei, A. Bisulco, L. Tirado, A. Zhu, D. Cachay, A. Ghanbarzadehdaghe Dagheyan, J.A. Martinez-Lorenzo"
+    },
+    {
+      "name": "Experimental Results of a Compressive Reflector Antenna Producing Spatial Coding",
+      "publisher": "IEEE APS/URSI, presented",
+      "releaseDate": "2018-07-01",
+      "website": "https://www.2018apsursi.org/Papers/ViewPapers.asp?PaperNum=2866",
+      "summary": "A. Molaei, K. Graham, L. Tirado, A. Ghanbarzadehdaghe Dagheyan, A. Bisulco, J. Heredia-Juesas, C. Liu, J. Von Holten, J.A. Martinez-Lorenzo"
+    },
+    {
+      "name": "Initial Design for the Phase-II Upgrade of the ATLAS Tile Calorimeter System",
+      "publisher": "CERN Document Server",
+      "releaseDate": "",
+      "website": "2016-12-01",
+      "summary": "Tile Calorimeter Collaboration"
+    },
+    {
+      "name": "Massive MIMO Millimeter Wave Radar Imaging System",
+      "publisher": "IEEE APS/URSI ",
+      "releaseDate": "2016-07-01",
+      "website": "http://www.2016apsursi.org/Papers/ViewPapers.asp?PaperNum=2548",
+      "summary": "A. Bisulco, L. Tirado, S. Patel, L. Annese, G. Ghazi and J.A. Martinez-Lorenzo"
+    },
+    {
+      "name": "High frequency modeling of large composite scatterers of arbitrary shape: Vortex-lens validation",
+      "publisher": "European Conference on Antennas and Propagation",
+      "releaseDate": "2016-03-01",
+      "website": "http://ieeexplore.ieee.org/document/7481388/",
+      "summary": "G. Ghazi, A. Ghanbarzadeh, A. Molaei, L. Tirado, A. Bisulco, J. Heredia-Juesas, J.A. Martinez-Lorenzo"
+    }
+  ],
+  "skills": [],
+  "languages": [],
+  "interests": [
+    {
+      "name": "Personal",
+      "keywords": [
+        "Traveling",
+        "Hiking",
+        "Boating",
+        "Photography",
+        "Cooking"
+      ]
+    }
+  ],
+  "references": []
+}

@@ -8,7 +8,22 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://abisulco.com" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "anthonytec2/anthonytec2.github.io"
-twitter_username: AnthonyBisulco
+twitter: 
+  username: AnthonyBisulco
+  summary: Personal Twitter related to my work
+Social:
+  name: Anthony Bisulco
+  links:
+    -https://plus.google.com/u/0/100856355517502786135
+    -https://www.linkedin.com/in/anthony-bisulco-545894ab/
+    -https://devpost.com/Anthonytec2
+    -https://github.com/anthonytec2
+
 github_username:  anthonytec2
+
+author: Anthony Bisulco
 # Build settings
 markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag

@@ -6,7 +6,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   concepts. Contained here will be my blog related to the above topics
   and some personal projects that I have developed. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://abisulco.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://abisulco.com" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "anthonytec2/anthonytec2.github.io"
 twitter: 
   username: AnthonyBisulco

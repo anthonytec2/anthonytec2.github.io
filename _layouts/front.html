@@ -14,24 +14,6 @@
   {% include scripts.html %}
   {% include footer.html %}
 </body>
-<script src="js/processing.min.js"></script>
-<script>
-    $(document).ready(function() {
 
-        $(window).resize(function() {
-            var w = window.innerWidth;
-            var h = window.innerHeight;
-            if (w > 760) {
-                document.getElementById('process').style.width = '640px';
-                document.getElementById('process').style.height = '200px';
-
-
-            } else {
-                document.getElementById('process').style.width = '300px';
-                document.getElementById('process').style.height = '100px';
-            }
-        });
-    });
-</script>
 <script src="js/creative.js"></script>
 </html>

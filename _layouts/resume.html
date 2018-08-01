@@ -1,14 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 {% include head.html %}
+<link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<body id="page-top">
-  {% include nav.html %}
-  {{content}}
-  
-  {% include footer.html %}
+<link href="vendors/font-awesome/css/all.min.css" rel="stylesheet" type="text/css">
+
+<body id="page-top" style="border-top:0px;">
+  {% include nav_port.html %} {{content}} {% include footer_port.html %} {% include scripts_port.html %}
+
 </body>
 
 </html>

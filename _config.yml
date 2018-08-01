@@ -1,29 +1,71 @@
-title: Anthony Bisulco's Portfolio
+remote_theme: "mmistakes/so-simple-theme"
+locale: en-US
+title: Anthony Bisulco's Blog
 email: arb426@cornell.edu
-description: >- # this means to ignore newlines until "baseurl:"
-  Anthony Bisulco's online portfolio related to topics in 
+description:  "Anthony Bisulco's blog related to topics in 
   optimization, signal processing, programming and other technical 
-  concepts. Contained here will be my blog related to the above topics
-  and some personal projects that I have developed. 
+  concepts."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://abisulco.com" # the base hostname & protocol for your site, e.g. http://example.com
-repository: "anthonytec2/anthonytec2.github.io"
-twitter: 
-  username: AnthonyBisulco
-  summary: Personal Twitter related to my work
-Social:
-  name: Anthony Bisulco
-  links:
-    -https://plus.google.com/u/0/100856355517502786135
-    -https://www.linkedin.com/in/anthony-bisulco-545894ab/
-    -https://devpost.com/Anthonytec2
-    -https://github.com/anthonytec2
+logo: "img/logo200.png"
 
-github_username:  anthonytec2
-
-author: Anthony Bisulco
+keep_files: ['img', 'js', 'vendors/']
+exclude: ['README.md','scss/', 'vendor/', '.vscode/', 'node_modules/', 'gulpfile.js', 'yarn.lock', 'package-lock.json', 'package.json', 'Gemfile.json', 'Gemfile-lock.json']
 # Build settings
 markdown: kramdown
+mathjax: true
+
+
+date_format: "%B %-d, %Y"
+read_time: true
+words_per_minute: 200
+google_fonts:
+  - name: "Source Sans Pro"
+    weights: "400,400i,700,700i"
+  - name: "Lora"
+    weights: "400,400i,700,700i"
+google_analytics: "UA-72181801-1"
+disqus:
+  shortname: anthonybisulco
+feed:
+  path: atom.xml
+search_full_content: false #
+liquid:
+  error_mode: strict
+
+
+author: 
+  name: Anthony Bisulco
+  picture: "img/me.jpg"
+  email: arb426@cornell.edu
+  twitter: Anthony Bisulco  
+  links:
+    - title: Twitter
+      url: https://twitter.com/AnthonyBisulco
+      icon: fab fa-twitter-square
+    - title: Github
+      url: https://github.com/anthonytec2
+      icon: fab fa-github-square
+    - title: Devpost
+      url: https://devpost.com/Anthonytec2
+      icon: img/devpost.svg
+      
+footer_links:
+  - title: Feed
+    url: atom.xml
+    icon: fas fa-rss-square
+
 plugins:
-  - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+paginate: 10  # amount of posts to show per page
+paginate_path: /blog/page:num/
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      share: true

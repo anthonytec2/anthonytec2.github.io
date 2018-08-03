@@ -1,155 +1,153 @@
-
 .highlight-nell {
   background-color: rgb(241, 159, 159);
 }
+
 .highlight-ml {
   background-color: rgb(159, 174, 241);
 }
+
 .highlight-opt {
   background-color: rgb(126, 226, 140);
 }
+
 .highlight-sp {
   background-color: rgb(241, 236, 159);
 }
-@media (max-width: 575.98px) { 
-  .fas {
-    font-size: 3rem;
-  }
 
- }
-
-@media (min-width: 576px) and (max-width: 767.98px) { 
-
+@media (max-width: 575.98px) {
   .fas {
     font-size: 3rem;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) { 
-  
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .fas {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
   .fas {
     font-size: 4rem;
   }
- }
+}
 
-@media (min-width: 992px) and (max-width: 1199.98px) { 
-  
+@media (min-width: 992px) and (max-width: 1199.98px) {
   .fas {
     font-size: 4rem;
   }
-  
- }
+}
 
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
   .fas {
     font-size: 4rem;
   }
-
- }
-
-
+}
 
 a {
-    color:#F05F40;
+  color: #F05F40;
 }
 
 header.masthead {
-          padding-top: 10rem;
-          padding-bottom: calc(10rem - 56px);
-          background-image: url("/img/nyc.jpg");
-          opacity: .85;
-          background-position: center center;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
-        }
-        
-        header.masthead hr {
-          margin-top: 30px;
-          margin-bottom: 30px;
-        }
-        
-        header.masthead h1 {
-          font-size: 2rem;
-        }
-        
-        header.masthead p {
-          font-weight: 300;
-        }
-        
-        @media (min-width: 768px) {
-          header.masthead p {
-            font-size: 1.15rem;
-          }
-        }
-        
-        @media (min-width: 992px) {
-          header.masthead {
-            height: 100vh;
-            min-height: 650px;
-            padding-top: 0;
-            padding-bottom: 0;
-          }
-          header.masthead h1 {
-            font-size: 3rem;
-          }
-        }
-        
-        @media (min-width: 1200px) {
-          header.masthead h1 {
-            font-size: 4rem;
-          }
-        }
-        
-        .text-primary {
-          color: #F05F40 !important;
-        }
-        
-        .btn {
-          font-weight: 700;
-          text-transform: uppercase;
-          border: none;
-          border-radius: 300px;
-          font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-        }
-        
-        .btn-xl {
-          padding: 1rem 2rem;
-        }
-        
-        .btn-primary {
-          background-color: #F05F40;
-          border-color: #F05F40;
-        }
-        
-        .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-          color: #fff;
-          background-color: #ee4b28 !important;
-        }
-        
-        .btn-primary:active, .btn-primary:focus {
-          box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
-        }
-        .header{
-          padding-top: 400px;
-        }
-        #YEA{
-            text-align: center;
-        }
-        #poster {
-            margin-left: auto;
-            margin-right: auto;
-            width: 960px;
-        }
-        .went {
-            padding-left: 100px;
-            padding-right: 100px;
-        }        
-      
-     
-     
-        a {
-                color:#F05F40;
-            }
-        </style>
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("/img/nyc.jpg");
+  opacity: .85;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header.masthead hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+}
+
+header.masthead p {
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 4rem;
+  }
+}
+
+.text-primary {
+  color: #F05F40 !important;
+}
+
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
+
+.btn-primary {
+  background-color: #F05F40;
+  border-color: #F05F40;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  color: #fff;
+  background-color: #ee4b28 !important;
+}
+
+.btn-primary:active, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+.header {
+  padding-top: 400px;
+}
+
+#YEA {
+  text-align: center;
+}
+
+#poster {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+.went {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+a {
+  color: #F05F40;
+}
+
+</style>

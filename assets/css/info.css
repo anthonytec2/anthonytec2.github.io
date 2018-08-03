@@ -1,3 +1,16 @@
+
+.highlight-nell {
+  background-color: rgb(241, 159, 159);
+}
+.highlight-ml {
+  background-color: rgb(159, 174, 241);
+}
+.highlight-opt {
+  background-color: rgb(126, 226, 140);
+}
+.highlight-sp {
+  background-color: rgb(241, 236, 159);
+}
 @media (max-width: 575.98px) { 
   .fas {
     font-size: 3rem;

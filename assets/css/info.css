@@ -35,14 +35,14 @@
 @media (min-width: 992px) and (max-width: 1199.98px) { 
   
   .fas {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   
  }
 
 @media (min-width: 1200px) { 
   .fas {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
  }

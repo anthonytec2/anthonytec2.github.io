@@ -1,1 +1,4 @@
 img/POLL.JPG
+_site/*
+Gemfile.lock
+settings.json

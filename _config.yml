@@ -26,7 +26,8 @@ google_fonts:
     weights: "400,400i,700,700i"
 google_analytics: "UA-72181801-1"
 disqus:
-  shortname: anthonybisulco
+  shortname: abisulco
+comments: true
 feed:
   path: atom.xml
 search_full_content: false #
@@ -36,7 +37,7 @@ liquid:
 
 author: 
   name: Anthony Bisulco
-  picture: "img/me.jpg"
+  picture: "img/me3.jpg"
   email: arb426@cornell.edu
   twitter: Anthony Bisulco  
   links:

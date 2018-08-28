@@ -1,0 +1,142 @@
+
+
+<style>
+
+</style>
+
+<div id="fig_el248711400111776953846663906484"></div>
+<script>
+function mpld3_load_lib(url, callback){
+  var s = document.createElement('script');
+  s.src = url;
+  s.async = true;
+  s.onreadystatechange = s.onload = callback;
+  s.onerror = function(){console.warn("failed to load library " + url);};
+  document.getElementsByTagName("head")[0].appendChild(s);
+}
+
+if(typeof(mpld3) !== "undefined" && mpld3._mpld3IsLoaded){
+   // already loaded: just create the figure
+   !function(mpld3){
+       
+    mpld3.register_plugin("htmltooltip", HtmlTooltipPlugin);
+    HtmlTooltipPlugin.prototype = Object.create(mpld3.Plugin.prototype);
+    HtmlTooltipPlugin.prototype.constructor = HtmlTooltipPlugin;
+    HtmlTooltipPlugin.prototype.requiredProps = ["id"];
+    HtmlTooltipPlugin.prototype.defaultProps = {labels:null,
+                                                hoffset:0,
+                                                voffset:10};
+    function HtmlTooltipPlugin(fig, props){
+        mpld3.Plugin.call(this, fig, props);
+    };
+
+    HtmlTooltipPlugin.prototype.draw = function(){
+       var obj = mpld3.get_element(this.props.id);
+       var labels = this.props.labels;
+       var tooltip = d3.select("body").append("div")
+                    .attr("class", "mpld3-tooltip")
+                    .style("position", "absolute")
+                    .style("z-index", "10")
+                    .style("visibility", "hidden");
+
+       obj.elements()
+           .on("mouseover", function(d, i){
+                              tooltip.html(labels[i])
+                                     .style("visibility", "visible");})
+           .on("mousemove", function(d, i){
+                  tooltip
+                    .style("top", d3.event.pageY + this.props.voffset + "px")
+                    .style("left",d3.event.pageX + this.props.hoffset + "px");
+                 }.bind(this))
+           .on("mouseout",  function(d, i){
+                           tooltip.style("visibility", "hidden");});
+    };
+    
+       mpld3.draw_figure("fig_el248711400111776953846663906484", {"width": 840.0, "height": 720.0, "axes": [{"bbox": [0.21780753968253974, 0.16712962962962963, 0.7351686507936507, 0.7259259259259259], "xlim": [-4.015805772371163, 524.0158057723711], "ylim": [100.51583865502643, 103.28569484413087], "xdomain": [-4.015805772371163, 524.0158057723711], "ydomain": [100.51583865502643, 103.28569484413087], "xscale": "linear", "yscale": "linear", "axes": [{"position": "bottom", "nticks": 8, "tickvalues": null, "tickformat": null, "scale": "linear", "fontsize": 20.0, "grid": {"gridOn": false}, "visible": true}, {"position": "left", "nticks": 7, "tickvalues": null, "tickformat": null, "scale": "linear", "fontsize": 20.0, "grid": {"gridOn": false}, "visible": true}], "axesbg": "#FFFFFF", "axesbgalpha": null, "zoomable": true, "id": "el24871140011177069536", "lines": [], "paths": [], "markers": [], "texts": [{"text": "Square Root # Pixels", "position": [0.5, -0.09821428571428573], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "hanging", "rotation": -0.0, "fontsize": 20.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el24871140011178068512"}, {"text": "Python Time(s)/Numba Time(s)", "position": [-0.1845354564469334, 0.5], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -90.0, "fontsize": 20.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el24871140011178069688"}, {"text": "Python vs. Numba", "position": [0.5, 1.0191326530612246], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -0.0, "fontsize": 24.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el24871140011178405448"}], "collections": [{"offsets": "data01", "xindex": 0, "yindex": 1, "paths": [[[[0.0, -0.5], [0.13260155, -0.5], [0.25978993539242673, -0.44731684579412084], [0.3535533905932738, -0.3535533905932738], [0.44731684579412084, -0.25978993539242673], [0.5, -0.13260155], [0.5, 0.0], [0.5, 0.13260155], [0.44731684579412084, 0.25978993539242673], [0.3535533905932738, 0.3535533905932738], [0.25978993539242673, 0.44731684579412084], [0.13260155, 0.5], [0.0, 0.5], [-0.13260155, 0.5], [-0.25978993539242673, 0.44731684579412084], [-0.3535533905932738, 0.3535533905932738], [-0.44731684579412084, 0.25978993539242673], [-0.5, 0.13260155], [-0.5, 0.0], [-0.5, -0.13260155], [-0.44731684579412084, -0.25978993539242673], [-0.3535533905932738, -0.3535533905932738], [-0.25978993539242673, -0.44731684579412084], [-0.13260155, -0.5], [0.0, -0.5]], ["M", "C", "C", "C", "C", "C", "C", "C", "C", "Z"]]], "pathtransforms": [[31.18047822311618, 0.0, 0.0, 31.18047822311618, 0.0, 0.0]], "alphas": [null], "edgecolors": ["#1F77B4"], "facecolors": ["#1F77B4"], "edgewidths": [1.0], "offsetcoordinates": "data", "pathcoordinates": "display", "zorder": 1, "id": "el24871140011178104144"}], "images": [], "sharex": [], "sharey": []}], "data": {"data01": [[20.0, 100.65894897851543], [50.0, 102.09801320059623], [90.0, 101.10990914120974], [128.0, 101.12411539578147], [170.0, 101.81832584732312], [250.0, 102.56944909383519], [350.0, 102.75995663931604], [450.0, 103.14258452064186], [500.0, 103.11486546051461]]}, "id": "el24871140011177695384", "plugins": [{"type": "reset"}, {"type": "zoom", "button": true, "enabled": false}, {"type": "boxzoom", "button": true, "enabled": false}, {"type": "htmltooltip", "id": "el24871140011178104144", "labels": ["<h5>Python: 1.95s, <br> Numba: 0.02s<h5>", "<h5>Python: 12.33s, <br> Numba: 0.12s<h5>", "<h5>Python: 39.69s, <br> Numba: 0.39s<h5>", "<h5>Python: 80.40s, <br> Numba: 0.80s<h5>", "<h5>Python: 142.68s, <br> Numba: 1.40s<h5>", "<h5>Python: 308.86s, <br> Numba: 3.01s<h5>", "<h5>Python: 604.69s, <br> Numba: 5.88s<h5>", "<h5>Python: 1000.95s, <br> Numba: 9.70s<h5>", "<h5>Python: 1235.17s, <br> Numba: 11.98s<h5>"], "hoffset": -50, "voffset": -90}]});
+   }(mpld3);
+}else if(typeof define === "function" && define.amd){
+   // require.js is available: use it to load d3/mpld3
+   require.config({paths: {d3: "https://mpld3.github.io/js/d3.v3.min"}});
+   require(["d3"], function(d3){
+      window.d3 = d3;
+      mpld3_load_lib("https://mpld3.github.io/js/mpld3.v0.3.js", function(){
+         
+    mpld3.register_plugin("htmltooltip", HtmlTooltipPlugin);
+    HtmlTooltipPlugin.prototype = Object.create(mpld3.Plugin.prototype);
+    HtmlTooltipPlugin.prototype.constructor = HtmlTooltipPlugin;
+    HtmlTooltipPlugin.prototype.requiredProps = ["id"];
+    HtmlTooltipPlugin.prototype.defaultProps = {labels:null,
+                                                hoffset:0,
+                                                voffset:10};
+    function HtmlTooltipPlugin(fig, props){
+        mpld3.Plugin.call(this, fig, props);
+    };
+
+    HtmlTooltipPlugin.prototype.draw = function(){
+       var obj = mpld3.get_element(this.props.id);
+       var labels = this.props.labels;
+       var tooltip = d3.select("body").append("div")
+                    .attr("class", "mpld3-tooltip")
+                    .style("position", "absolute")
+                    .style("z-index", "10")
+                    .style("visibility", "hidden");
+
+       obj.elements()
+           .on("mouseover", function(d, i){
+                              tooltip.html(labels[i])
+                                     .style("visibility", "visible");})
+           .on("mousemove", function(d, i){
+                  tooltip
+                    .style("top", d3.event.pageY + this.props.voffset + "px")
+                    .style("left",d3.event.pageX + this.props.hoffset + "px");
+                 }.bind(this))
+           .on("mouseout",  function(d, i){
+                           tooltip.style("visibility", "hidden");});
+    };
+    
+         mpld3.draw_figure("fig_el248711400111776953846663906484", {"width": 840.0, "height": 720.0, "axes": [{"bbox": [0.21780753968253974, 0.16712962962962963, 0.7351686507936507, 0.7259259259259259], "xlim": [-4.015805772371163, 524.0158057723711], "ylim": [100.51583865502643, 103.28569484413087], "xdomain": [-4.015805772371163, 524.0158057723711], "ydomain": [100.51583865502643, 103.28569484413087], "xscale": "linear", "yscale": "linear", "axes": [{"position": "bottom", "nticks": 8, "tickvalues": null, "tickformat": null, "scale": "linear", "fontsize": 20.0, "grid": {"gridOn": false}, "visible": true}, {"position": "left", "nticks": 7, "tickvalues": null, "tickformat": null, "scale": "linear", "fontsize": 20.0, "grid": {"gridOn": false}, "visible": true}], "axesbg": "#FFFFFF", "axesbgalpha": null, "zoomable": true, "id": "el24871140011177069536", "lines": [], "paths": [], "markers": [], "texts": [{"text": "Square Root # Pixels", "position": [0.5, -0.09821428571428573], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "hanging", "rotation": -0.0, "fontsize": 20.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el24871140011178068512"}, {"text": "Python Time(s)/Numba Time(s)", "position": [-0.1845354564469334, 0.5], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -90.0, "fontsize": 20.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el24871140011178069688"}, {"text": "Python vs. Numba", "position": [0.5, 1.0191326530612246], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -0.0, "fontsize": 24.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el24871140011178405448"}], "collections": [{"offsets": "data01", "xindex": 0, "yindex": 1, "paths": [[[[0.0, -0.5], [0.13260155, -0.5], [0.25978993539242673, -0.44731684579412084], [0.3535533905932738, -0.3535533905932738], [0.44731684579412084, -0.25978993539242673], [0.5, -0.13260155], [0.5, 0.0], [0.5, 0.13260155], [0.44731684579412084, 0.25978993539242673], [0.3535533905932738, 0.3535533905932738], [0.25978993539242673, 0.44731684579412084], [0.13260155, 0.5], [0.0, 0.5], [-0.13260155, 0.5], [-0.25978993539242673, 0.44731684579412084], [-0.3535533905932738, 0.3535533905932738], [-0.44731684579412084, 0.25978993539242673], [-0.5, 0.13260155], [-0.5, 0.0], [-0.5, -0.13260155], [-0.44731684579412084, -0.25978993539242673], [-0.3535533905932738, -0.3535533905932738], [-0.25978993539242673, -0.44731684579412084], [-0.13260155, -0.5], [0.0, -0.5]], ["M", "C", "C", "C", "C", "C", "C", "C", "C", "Z"]]], "pathtransforms": [[31.18047822311618, 0.0, 0.0, 31.18047822311618, 0.0, 0.0]], "alphas": [null], "edgecolors": ["#1F77B4"], "facecolors": ["#1F77B4"], "edgewidths": [1.0], "offsetcoordinates": "data", "pathcoordinates": "display", "zorder": 1, "id": "el24871140011178104144"}], "images": [], "sharex": [], "sharey": []}], "data": {"data01": [[20.0, 100.65894897851543], [50.0, 102.09801320059623], [90.0, 101.10990914120974], [128.0, 101.12411539578147], [170.0, 101.81832584732312], [250.0, 102.56944909383519], [350.0, 102.75995663931604], [450.0, 103.14258452064186], [500.0, 103.11486546051461]]}, "id": "el24871140011177695384", "plugins": [{"type": "reset"}, {"type": "zoom", "button": true, "enabled": false}, {"type": "boxzoom", "button": true, "enabled": false}, {"type": "htmltooltip", "id": "el24871140011178104144", "labels": ["<h5>Python: 1.95s, <br> Numba: 0.02s<h5>", "<h5>Python: 12.33s, <br> Numba: 0.12s<h5>", "<h5>Python: 39.69s, <br> Numba: 0.39s<h5>", "<h5>Python: 80.40s, <br> Numba: 0.80s<h5>", "<h5>Python: 142.68s, <br> Numba: 1.40s<h5>", "<h5>Python: 308.86s, <br> Numba: 3.01s<h5>", "<h5>Python: 604.69s, <br> Numba: 5.88s<h5>", "<h5>Python: 1000.95s, <br> Numba: 9.70s<h5>", "<h5>Python: 1235.17s, <br> Numba: 11.98s<h5>"], "hoffset": -50, "voffset": -90}]});
+      });
+    });
+}else{
+    // require.js not available: dynamically load d3 & mpld3
+    mpld3_load_lib("https://mpld3.github.io/js/d3.v3.min.js", function(){
+         mpld3_load_lib("https://mpld3.github.io/js/mpld3.v0.3.js", function(){
+                 
+    mpld3.register_plugin("htmltooltip", HtmlTooltipPlugin);
+    HtmlTooltipPlugin.prototype = Object.create(mpld3.Plugin.prototype);
+    HtmlTooltipPlugin.prototype.constructor = HtmlTooltipPlugin;
+    HtmlTooltipPlugin.prototype.requiredProps = ["id"];
+    HtmlTooltipPlugin.prototype.defaultProps = {labels:null,
+                                                hoffset:0,
+                                                voffset:10};
+    function HtmlTooltipPlugin(fig, props){
+        mpld3.Plugin.call(this, fig, props);
+    };
+
+    HtmlTooltipPlugin.prototype.draw = function(){
+       var obj = mpld3.get_element(this.props.id);
+       var labels = this.props.labels;
+       var tooltip = d3.select("body").append("div")
+                    .attr("class", "mpld3-tooltip")
+                    .style("position", "absolute")
+                    .style("z-index", "10")
+                    .style("visibility", "hidden");
+
+       obj.elements()
+           .on("mouseover", function(d, i){
+                              tooltip.html(labels[i])
+                                     .style("visibility", "visible");})
+           .on("mousemove", function(d, i){
+                  tooltip
+                    .style("top", d3.event.pageY + this.props.voffset + "px")
+                    .style("left",d3.event.pageX + this.props.hoffset + "px");
+                 }.bind(this))
+           .on("mouseout",  function(d, i){
+                           tooltip.style("visibility", "hidden");});
+    };
+    
+                 mpld3.draw_figure("fig_el248711400111776953846663906484", {"width": 840.0, "height": 720.0, "axes": [{"bbox": [0.21780753968253974, 0.16712962962962963, 0.7351686507936507, 0.7259259259259259], "xlim": [-4.015805772371163, 524.0158057723711], "ylim": [100.51583865502643, 103.28569484413087], "xdomain": [-4.015805772371163, 524.0158057723711], "ydomain": [100.51583865502643, 103.28569484413087], "xscale": "linear", "yscale": "linear", "axes": [{"position": "bottom", "nticks": 8, "tickvalues": null, "tickformat": null, "scale": "linear", "fontsize": 20.0, "grid": {"gridOn": false}, "visible": true}, {"position": "left", "nticks": 7, "tickvalues": null, "tickformat": null, "scale": "linear", "fontsize": 20.0, "grid": {"gridOn": false}, "visible": true}], "axesbg": "#FFFFFF", "axesbgalpha": null, "zoomable": true, "id": "el24871140011177069536", "lines": [], "paths": [], "markers": [], "texts": [{"text": "Square Root # Pixels", "position": [0.5, -0.09821428571428573], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "hanging", "rotation": -0.0, "fontsize": 20.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el24871140011178068512"}, {"text": "Python Time(s)/Numba Time(s)", "position": [-0.1845354564469334, 0.5], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -90.0, "fontsize": 20.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el24871140011178069688"}, {"text": "Python vs. Numba", "position": [0.5, 1.0191326530612246], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -0.0, "fontsize": 24.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el24871140011178405448"}], "collections": [{"offsets": "data01", "xindex": 0, "yindex": 1, "paths": [[[[0.0, -0.5], [0.13260155, -0.5], [0.25978993539242673, -0.44731684579412084], [0.3535533905932738, -0.3535533905932738], [0.44731684579412084, -0.25978993539242673], [0.5, -0.13260155], [0.5, 0.0], [0.5, 0.13260155], [0.44731684579412084, 0.25978993539242673], [0.3535533905932738, 0.3535533905932738], [0.25978993539242673, 0.44731684579412084], [0.13260155, 0.5], [0.0, 0.5], [-0.13260155, 0.5], [-0.25978993539242673, 0.44731684579412084], [-0.3535533905932738, 0.3535533905932738], [-0.44731684579412084, 0.25978993539242673], [-0.5, 0.13260155], [-0.5, 0.0], [-0.5, -0.13260155], [-0.44731684579412084, -0.25978993539242673], [-0.3535533905932738, -0.3535533905932738], [-0.25978993539242673, -0.44731684579412084], [-0.13260155, -0.5], [0.0, -0.5]], ["M", "C", "C", "C", "C", "C", "C", "C", "C", "Z"]]], "pathtransforms": [[31.18047822311618, 0.0, 0.0, 31.18047822311618, 0.0, 0.0]], "alphas": [null], "edgecolors": ["#1F77B4"], "facecolors": ["#1F77B4"], "edgewidths": [1.0], "offsetcoordinates": "data", "pathcoordinates": "display", "zorder": 1, "id": "el24871140011178104144"}], "images": [], "sharex": [], "sharey": []}], "data": {"data01": [[20.0, 100.65894897851543], [50.0, 102.09801320059623], [90.0, 101.10990914120974], [128.0, 101.12411539578147], [170.0, 101.81832584732312], [250.0, 102.56944909383519], [350.0, 102.75995663931604], [450.0, 103.14258452064186], [500.0, 103.11486546051461]]}, "id": "el24871140011177695384", "plugins": [{"type": "reset"}, {"type": "zoom", "button": true, "enabled": false}, {"type": "boxzoom", "button": true, "enabled": false}, {"type": "htmltooltip", "id": "el24871140011178104144", "labels": ["<h5>Python: 1.95s, <br> Numba: 0.02s<h5>", "<h5>Python: 12.33s, <br> Numba: 0.12s<h5>", "<h5>Python: 39.69s, <br> Numba: 0.39s<h5>", "<h5>Python: 80.40s, <br> Numba: 0.80s<h5>", "<h5>Python: 142.68s, <br> Numba: 1.40s<h5>", "<h5>Python: 308.86s, <br> Numba: 3.01s<h5>", "<h5>Python: 604.69s, <br> Numba: 5.88s<h5>", "<h5>Python: 1000.95s, <br> Numba: 9.70s<h5>", "<h5>Python: 1235.17s, <br> Numba: 11.98s<h5>"], "hoffset": -50, "voffset": -90}]});
+            })
+         });
+}
+</script>

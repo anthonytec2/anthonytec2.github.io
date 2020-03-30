@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Anthony Bisulco",
-    "label": "Computational Scientist",
+    "label": "Computational Engineer",
     "picture": "https://web.northeastern.edu/jmartinez/wp-content/uploads/2014/04/DSC_0584-e1506820534237-300x300.jpeg",
     "email": "arb426@cornell.edu",
     "phone": "",
     "website": "abisulco.com",
-    "summary": "Experienced Computational Scientist with a demonstrated history of working in the higher education & private industry. Strong research professional with a Bachelor of Science (BS) focused in Electrical and Computer Engineering from Northeastern University. Incoming graduate student at Cornell Tech(NYC).",
+    "summary": "Experienced Computational Engineer with a demonstrated history of working in higher education & private industry. Strong research professional with a Master of Engineering (MEng) in Electrical and Computer Engineering from Cornell University and a Bachelor of Science (BS) focused in Electrical and Computer Engineering from Northeastern University.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -34,14 +34,27 @@
   },
   "work": [
     {
+      "company": "Samsung Research America",
+      "position": "Machine Learning Researcher",
+      "website": "https://research.samsung.com/aicenter_ny",
+      "startDate": "2019-07-22",
+      "endDate": "Present",
+      "summary": "Samsung AI Center in New York invents ground breaking technologies to solve challenging problems at the intersection of AI and robotics",
+      "highlights": [
+        "Developed a FPGA accelerator using HLS and Chisel for low-bandwidth pedestrian detection on edge devices using neuromorphic vision sensors",
+        "Implemented laboratory infrastructure: code management, compute cluster management and  networking",
+        "Implemented massive hyperparameter tuning solution for QXplore: a novel exploration based reinforcement learning algorithm"
+      ]
+    },
+    {
       "company": "Brookhaven National Laboratory",
-      "position": "Software Engineer",
+      "position": "Research Scientist",
       "website": "https://www.bnl.gov",
       "startDate": "2018-06-01",
       "endDate": "2018-08-01",
-      "summary": "Departement of Energy National Laboratory. I worked on the sPhenix(particle detector) experiment on the Relativistic Heavy Ion Collider ",
+      "summary": "Departement of Energy National Laboratory. I worked on the sPhenix(particle detector) experiment on the Relativistic Heavy Ion Collider",
       "highlights": [
-        "Developed fast Python Time of Flight(TOF) signal processing algorithms for a 10ps TOF detector using NumPy, SciPy, and JupyterLab",
+        "Developed fast Python Time of Flight(TOF) signal processing algorithms for a 10ps TOF detector",
         "Implemented Python parameter optimization algorithms using Dask(distributed computing library) ",
         "Designed a constant fraction discriminator algorithm to reduce TOF electronics’ delay from 64ps to 8ps"
       ]
@@ -69,7 +82,7 @@
       "highlights": [
         "Implemented a visual-based navigation technique for GPS denied urban areas using computer vision ",
         "Integrated Velodyne LIDAR and 5 Point Grey Cameras into ROS for light field array",
-        "Developed acquisition software for light field calibration in C++ "
+        "Developed a mobile manipulation platform focusing on visual navigation/manipulation using the UR-10 ma-nipulator, Point Grey Cameras and the Warthog robot platform"
       ]
     },
     {
@@ -82,9 +95,7 @@
       "highlights": [
         "Developed an FPGA control system for a multiple-input multiple-output radar system with 400 channels",
         "Implemented simulated annealing and compressive sensing methods for a coded imaging system",
-        "Implemented a fused millimeter/infrared imaging system for target validation",
-        "Designed the system architecture for a fused digital breast tomosynthesis/nearfield radar imaging system",
-        "Collaborated with a group of researchers to advance laboratory projects"
+        "Implemented a fused millimeter/infrared imaging system for target validation"
       ]
     },
     {
@@ -98,8 +109,7 @@
         "Developed array synthesis algorithms for multi-anode photomultiplier tubes for increased sensor resolution",
         "Designed and 3D printed a fiber light guide for 85% increased sensor coverage of the photomultiplier tube",
         "Built Spectrum a web application for laboratory simulation and experimental data comparison",
-        "Presented at an International Collaboration Conference on Tile Calorimeter Upgrades",
-        "Collaborated with a multi-disciplinary/cultural team on experimental particle physics projects"
+        "Presented at an International Collaboration Conference on Tile Calorimeter Upgrades"
       ]
     },
     {
@@ -112,9 +122,7 @@
       "highlights": [
         "Adapted MATLAB image processing algorithms to an FPGA for a UAV Micro-LIDAR ",
         "Developed and implemented a configurable FPGA moving average filter for Avalanche Photo Diodes (APD) ",
-        "Built a visualization tool to process APD camera binary files ",
-        "Performed sensor characterization on APDs under varying temperature and voltage conditions",
-        "Collaborated with employees and outside consultants to further development of active optical system"
+        "Performed sensor characterization on APDs under varying temperature and voltage conditions"
       ]
     }
   ],
@@ -149,8 +157,8 @@
       "courses": [
         "Statistical Signal Processing and Reinforcement Learning",
         "Adaptive Signal Processing and Digital Feedback Control",
-        "Embedded Systems",
-        "Algorithms and Data Structures for Applications"
+        "Natural Language Processing",
+        "Bayesian Estimation and Learning"
       ]
     },
     {
@@ -177,6 +185,27 @@
     }
   ],
   "publications": [
+    {
+      "name": "Near-chip Dynamic Vision Filtering for Low-Bandwidth Pedestrian Detection",
+      "publisher": "IEEE-ISVLSI 2020, under review",
+      "releaseDate": "",
+      "website": "",
+      "summary": "A. Bisulco*, F. Cladera*, V. Isler,  and D. Lee"
+    },
+    {
+      "name": "Reward Prediction Error as an Exploration Objective in Deep RL",
+      "publisher": "IJCAI 2020 under review",
+      "releaseDate": "",
+      "website": "https://arxiv.org/pdf/1906.08189.pdf",
+      "summary": "R. Elder, B. Eisner, D. Yang, A. Bisulco, E. Mitchell, S. Seung and D. Lee"
+    },
+    {
+      "name": "On-device Event Filtering with Binary  Neural Networks for Pedestrian Detection Using Neuromorphic Vision Sensors",
+      "publisher": "IEEE-ICIP 2020, under review",
+      "releaseDate": "",
+      "website": "",
+      "summary": "F. Cladera*, A. Bisulco*, D. Kepple, V. Isler and D. Lee"
+    },
     {
       "name": "Towards Three-dimensional Millimeter-Wave Radar Imaging of On-the-move Targets",
       "publisher": "IEEE APS/URSI , presented",

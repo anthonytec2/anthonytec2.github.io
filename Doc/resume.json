@@ -38,7 +38,6 @@
       "position": "Machine Learning Researcher",
       "website": "https://research.samsung.com/aicenter_ny",
       "startDate": "2019-07-22",
-      "endDate": "Present",
       "summary": "Samsung AI Center in New York invents ground breaking technologies to solve challenging problems at the intersection of AI and robotics",
       "highlights": [
         "Developed a FPGA accelerator using HLS and Chisel for low-bandwidth pedestrian detection on edge devices using neuromorphic vision sensors",
@@ -188,21 +187,18 @@
     {
       "name": "Near-chip Dynamic Vision Filtering for Low-Bandwidth Pedestrian Detection",
       "publisher": "IEEE-ISVLSI 2020, under review",
-      "releaseDate": "",
       "website": "",
       "summary": "A. Bisulco*, F. Cladera*, V. Isler,  and D. Lee"
     },
     {
       "name": "Reward Prediction Error as an Exploration Objective in Deep RL",
       "publisher": "IJCAI 2020 under review",
-      "releaseDate": "",
       "website": "https://arxiv.org/pdf/1906.08189.pdf",
       "summary": "R. Elder, B. Eisner, D. Yang, A. Bisulco, E. Mitchell, S. Seung and D. Lee"
     },
     {
       "name": "On-device Event Filtering with Binary  Neural Networks for Pedestrian Detection Using Neuromorphic Vision Sensors",
       "publisher": "IEEE-ICIP 2020, under review",
-      "releaseDate": "",
       "website": "",
       "summary": "F. Cladera*, A. Bisulco*, D. Kepple, V. Isler and D. Lee"
     },

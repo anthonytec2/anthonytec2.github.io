@@ -43,7 +43,7 @@
       "highlights": [
         "Developed a FPGA accelerator using HLS and Chisel for low-bandwidth pedestrian detection on edge devices using neuromorphic vision sensors",
         "Implemented laboratory infrastructure: code management, compute cluster management and  networking",
-        "Implemented massive hyperparameter tuning solution for QXplore: a novel exploration based reinforcement learning algorithm"
+        "Implemented a distributed hyperparameter tuning solution for QXplore: a novel exploration based reinforcement learning algorithm"
       ]
     },
     {

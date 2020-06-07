@@ -1,10 +1,19 @@
 <meta charset="utf-8">
 
+<meta name="title" content="{{ page.title }}">
+<meta name="description" content="{{ page.description }}">
 
 <meta name="author" content="Anthony Bisulco">
 <meta name="keywords" content="{{ page.keywords | join: ', ' | escape }}">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:description" content="{{ page.description }}" />
+<meta property="og:image" content="{{ page.image }}" />
 
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:description" content="{{ page.description }}">
+<meta name="twitter:image" content="{{ page.image }}">
+<meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="/img/logo200.png" type="image/png" >
 
